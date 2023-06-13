@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hamster</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+        <link rel="shortcut icon" href="pic.png" />
+
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                    
+                    <script>
+// Retrieve theme preference and checkbox state from localStorage
+const darkTheme = localStorage.getItem('darkTheme') === 'true';
+const chkState = localStorage.getItem('chkState') === 'true';
+
+// Set theme and checkbox state on page load
+if (darkTheme) {
+  document.body.classList.add('dark');
+}
+chk.checked = chkState;
+
+// Handle theme toggle and checkbox change
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  // Save theme preference and checkbox state to localStorage
+  localStorage.setItem('darkTheme', chk.checked);
+  localStorage.setItem('chkState', chk.checked);
+});
+
+                    </script>
+
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="about.html">About Me</a>
+            <a class="nav-item nav-link" href="skill.html">Skills</a>
+            <a class="nav-item nav-link" href="project.html">Project</a>
+                </div>
+            </div>
+            <div class="navbar-nav2">
+                <a class="nav-item nav-link2" href="https://www.instagram.com/yeoh_xinpei/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="nav-item nav-link2" href="https://wa.me/+60184661801"><i class="bi bi-whatsapp"></i></a>
+                <a class="nav-item nav-link2" href="https://www.facebook.com/YeohXinPei"><i class="fa-brands fa-facebook"></i></a>
+                <a class="nav-item nav-link2" href="https://github.com/YeohXinPei"><i class="fa-brands fa-github"></i></a>
+                <a class="nav-item nav-link2" href="mailto:yeohxinpei123@example.com"> <i class="fab fa-google"></i></a>
+                    </div>               
+            </div>            
+    </nav>
+
+<div class="skill-title">
+    <h3>Languages and Tools <span class="text-muted">&#x1F4BB;</span> ! </h3>
+</div>
+    
+
+    <div class="circle-container">
+        <div class="circle"><img src="bootstrap.png"></div>
+        <div class="circle"><img src="html.png"></div>
+        <div class="circle"><img src="css.png"></div>
+        <div class="circle"><img src="js.png"></div>
+        <div class="circle"><img src="c.png"></div>
+        <div class="circle"><img src="php.png"></div>
+        <div class="circle"><img src="sql.svg"></div>
+        <div class="circle"><img src="python.png"></div>
+        <div class="circle"><img src="java.png"></div>
+        <div class="circle"><img src="ps.png"></div>
+      </div>
+
+      <div class="cert">
+        <div class="skill-text">
+            <div class="cert-text"><i>I will spend my time to improve my skills and it will surely give advantanges in my future career</i></div>
+            <p class="keep-color"><span class="online">Online</span> CERTIFICATE</p>
+          </div>
+        <img src="cert.png">
+      </div>
+      
+
+    
+
+   
+
+  
+      
+      
+
+</body>
+</html>

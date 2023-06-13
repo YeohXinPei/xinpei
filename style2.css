@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500&family=Roboto:wght@100;300;400;500&family=Staatliches&display=swap');
+
+body {
+    background: radial-gradient(circle at center, black 0%, black 50%);
+    color: rgb(143, 142, 142) !important;
+}
+
+.header {
+    background-color: black;
+    padding: 20px 0px;
+}
+
+nav {
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 40px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #eec5c9;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/*marquee */
+.marquee {
+    margin: 0 50px;
+    margin-bottom: 50px;
+    cursor: default;
+    height: 100px;
+    overflow: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee p {
+    font-family: Playfair Display;
+    font-size: 80px;
+    position: relative;
+    color: rgb(177, 177, 177);
+    display: inline-block;
+    margin-left: 0 15%;
+    will-change: transform;
+    letter-spacing: 5px;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0%;
+    }
+
+    /* start the text offscreen */
+    100% {
+        left: -100%;
+    }
+
+    /* move the text completely offscreen */
+}
+
+
+.container-project {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-right: 2px solid rgb(164, 163, 163);
+    border-left: 2px solid rgb(164, 163, 163);
+    border-bottom: 2px solid rgb(164, 163, 163);
+    box-shadow: 0 0 10px rgba(57, 57, 57, 0.5);
+    margin: 130px;
+    height: 300px;
+}
+
+
+.img-left {
+    width: 50%;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+
+.text-right {
+    width: 50%;
+    margin: 20px;
+}
+
+.img-right {
+    width: 50%;
+    height: 320px;
+    border: 1px solid white;
+}
+
+.text-left {
+    background-color: white;
+    width: 50%;
+    margin: 25px;
+}
