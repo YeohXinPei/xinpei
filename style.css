@@ -39,6 +39,7 @@
   text-align: center;
 }
 
+
 .contact {
   text-align: center;
   margin-bottom: 20px;
@@ -137,6 +138,40 @@ nav img {
   display: flex;
   align-items: center;
 }
+
+
+.contact-me {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.contact-me a {
+  display: inline-block;
+  margin: 0 13px;
+  font-size: 35px;
+  /* Adjust the font size as needed */
+}
+
+.contact-me .nav-item {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #eec5c9;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px;
+}
+
+.contact-me .nav-item i {
+  font-size: 28px;
+  color: white;
+}
+
+.contact-me .nav-item i:hover {
+  color: #eec5c9;
+}
+
 .left-side{
   width: 45%;
 }
